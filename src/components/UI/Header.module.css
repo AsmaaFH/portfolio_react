@@ -4,6 +4,7 @@
   padding: 20px 6rem;
   align-items: center;
   transition: 0.3s all ease-out;
+  height: 76px;
 }
 @media (max-width: 575px) {
   .navbar {
