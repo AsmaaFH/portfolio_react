@@ -1,0 +1,120 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 6rem;
+  align-items: center;
+  transition: 0.3s all ease-out;
+}
+@media (max-width: 575px) {
+  .navbar {
+    padding: 20px 2rem;
+  }
+}
+.scrolling {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 5;
+  -webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+}
+.name {
+  position: relative;
+  font-weight: 900;
+  font-size: 25px;
+}
+.name span {
+  color: white;
+  font-weight: bold;
+}
+.name span::after {
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  width: 40px;
+  height: 40px;
+  content: '';
+  background: #3e64ff;
+  z-index: -1;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.links {
+  transition: all 2s;
+}
+.links span {
+  display: inline-block;
+  margin: 0 5px;
+  position: relative;
+  cursor: pointer;
+}
+.links span:first-of-type {
+  color: var(--main-color);
+}
+.links span:before {
+  opacity: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background-color: var(--main-color);
+  top: 24px;
+  left: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+.links span:before {
+  display: none;
+}
+.links span:hover:before {
+  opacity: 1;
+}
+.toggle {
+  width: 25px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: relative;
+  color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.toggle:focus {
+  outline: none;
+}
+.toggle span {
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  margin-top: 4px;
+  border-radius: 5px;
+}
+@media (max-width: 767px) {
+  .toggle {
+    display: block;
+  }
+  .links {
+    display: none;
+    transition: all 3s;
+  }
+  .links.open {
+    display: block;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    top: 73px;
+    width: 100%;
+    left: 0;
+    padding: 5px 6rem;
+    transition: all 0.3s;
+    -webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+  }
+  .links.open span {
+    display: block;
+    margin-top: 8px;
+  }
+}

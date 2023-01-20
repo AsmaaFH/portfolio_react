@@ -1,0 +1,60 @@
+.circle {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  text-align: center;
+  font-size: 30px;
+}
+.circle:first-of-type {
+  left: 5%;
+  animation: 4.5s infinite alternate circle-fade-in;
+}
+.circle:nth-of-type(2) {
+  left: 15%;
+  animation: 3.5s infinite alternate circle-fade-in;
+}
+.circle:nth-of-type(3) {
+  left: 25%;
+  animation: 4.5s infinite alternate circle-fade-in;
+}
+.circle:nth-of-type(4) {
+  left: 35%;
+  animation: 5s infinite alternate circle-fade-in;
+}
+.circle:nth-of-type(5) {
+  left: 45%;
+  animation: 5.5s infinite alternate circle-fade-in;
+}
+.circle:nth-of-type(6) {
+  left: 55%;
+  animation: 6s infinite alternate circle-fade-in;
+}
+.circle:nth-of-type(7) {
+  left: 65%;
+  animation: 3s infinite alternate circle-fade-in;
+}
+.circle:nth-of-type(8) {
+  left: 75%;
+  animation: 2.5s infinite alternate circle-fade-in;
+}
+.circle:nth-of-type(9) {
+  left: 85%;
+  animation: 4.5s infinite alternate circle-fade-in;
+}
+.circle:nth-of-type(10) {
+  left: 95%;
+  animation: 3.5s infinite alternate circle-fade-in;
+}
+
+@keyframes circle-fade-in {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+  100% {
+    opacity: 0.3;
+    top: 100%;
+  }
+}
