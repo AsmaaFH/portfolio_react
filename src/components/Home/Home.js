@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from '../UI/Header';
 import CirclesAnimate from './CirclesAnimate';
+import Introduction from './Introduction';
 
 const Home = () => {
   return (
     <>
       <CirclesAnimate />
-      <Header />
+      <Introduction />
     </>
   );
 };
