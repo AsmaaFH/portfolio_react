@@ -1,0 +1,94 @@
+.about-me {
+  display: flex;
+  padding: 0 5vw;
+  position: relative;
+}
+.about-me::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100px;
+  border-radius: 65% 150% 100% 0% / 0% 130% 30% 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--main-color);
+  opacity: 0.3;
+}
+@media (max-width: 991px) {
+  .about-me {
+    padding: 0 2vw;
+  }
+}
+@media (max-width: 991px) {
+  .about-me {
+    justify-content: center;
+  }
+}
+.about-img {
+  padding: 3rem;
+  display: flex;
+}
+@media (max-width: 991px) {
+  .about-img {
+    display: flex;
+  }
+}
+@media (max-width: 767px) {
+  .about-img {
+    display: none;
+  }
+}
+.about-img img {
+  width: 336px;
+  height: auto;
+  margin: auto;
+}
+@media (max-width: 991px) {
+  .about-img img {
+    height: 70%;
+    margin: auto;
+  }
+}
+.about-text {
+  padding: 6% 8%;
+}
+@media (max-width: 767px) {
+  .about-text {
+    width: 90%;
+  }
+}
+.about-text h1 {
+  font-size: 60px;
+}
+@media (max-width: 991px) {
+  .about-text h1 {
+    font-size: 50px;
+  }
+}
+.about-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--paragraph-color);
+}
+.about-text a {
+  color: white;
+  padding: 7px 30px;
+  background-color: var(--main-color);
+  background-image: linear-gradient(
+    to right,
+    var(--main-color),
+    rgba(161, 161, 161, 0.3),
+    var(--main-color),
+    rgba(161, 161, 161, 0.3)
+  );
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 15px;
+  display: inline-block;
+  text-decoration: none;
+}
+.about-text button:focus {
+  outline: none;
+}
